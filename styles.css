@@ -97,6 +97,7 @@ button{
 @media screen and (max-width: 499px){
     .modal-container .modal {
         width: 70%;
+        height: 40%;
         
 
     }
