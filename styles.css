@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.main{
+    margin: auto;
+    text-align: center;
+}
+.modal-container{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.open{
+    visibility: visible;
+    opacity: 1;
+}
+.modal-container .modal{
+    position: relative;
+    background: gray;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+form .name, form .email{
+    margin: 10px auto;
+    padding: 10px auto;
+}
+.email{
+    margin-left: 0;
+}
+button{
+    display: inline-block;
+    background: #377aa9;
+    color:#fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    margin-bottom: .6rem !important;
+}
+.btn:hover {
+    background: #063251;
+    color: #377aa9;
+}
+.close{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+}
